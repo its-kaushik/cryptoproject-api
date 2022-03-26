@@ -2,7 +2,19 @@ const axios = require('axios') ;
 const config = require('config') ;
 
 module.exports.getMarketStats = (req,res) => {
-    
+    axios.get('https://api.coinranking.com/v2/stats', {
+        headers: {
+            'x-access-token': config.get('coinRankingApiKey')
+
+        }
+    })
+        .then(response => {
+            res.json(response.data.data) ;
+        })
+        .catch(err => {
+            res.json(err) ;
+            console.log(err) ;
+        })
 }
 
 
