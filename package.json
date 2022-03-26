@@ -1,0 +1,22 @@
+{
+  "name": "cryptoproject-api",
+  "version": "1.0.0",
+  "description": "Backend of the cryptoverse App",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "abc"
+  },
+  "author": "Mayank Kaushik",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "config": "^3.3.7",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  }
+}
