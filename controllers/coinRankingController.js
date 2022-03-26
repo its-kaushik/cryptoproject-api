@@ -1,6 +1,11 @@
 const axios = require('axios') ;
 const config = require('config') ;
 
+module.exports.getMarketStats = (req,res) => {
+    
+}
+
+
 module.exports.getCoins = (req,res) => {
 
     let limit = req.params.numOfCoins ;
